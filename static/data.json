@@ -1,0 +1,58 @@
+[
+  {
+    "name" : "Blade Runner 2049",
+    "genre" : ["Thriller","Sci-Fi", "Mystery"],
+    "release" : "06/10/2017",
+    "distributor": "Warner Bros",
+    "director": "Denis Villeneuve",
+    "stars" : [ "Harrison Ford","Ryan Gosling","Ana de Armas","Dave Bautista" ],
+    "age-rating": "R",
+    "length": "164",
+    "poster":""
+  },
+  {
+    "name" : "Beauty in the Beast",
+    "genre" : ["Musical","Fantasy","Romance"],
+    "release" : "17/03/2017",
+    "distributor": "Disney",
+    "director": "Bill Condon ",
+    "stars" : ["Emma Watson","Luke Evans","Kevin Kline","Dan Stevens","Josh Gad"],
+    "age-rating": "PG",
+    "length":"129",
+    "poster":""
+  },
+  {
+    "name" : "Wonder Woman",
+    "genre" : ["Action", "Adventure", "Fantasy"],
+    "release" : "02/06/2017",
+    "distributor": "Warner Bros",
+    "director": "Patty Jenkins",
+    "stars" : ["Gal Gadot","Chris Pine","Robin Wright","Connie Nielsen",""],
+    "age-rating": "PG-13",
+    "length":"141",
+    "poster": ""
+  },
+  {
+    "name" : "It",
+    "genre" : ["Horror", "Thriller", "Drama"],
+    "release" : "08/09/2017",
+    "distributor": "Warner Bros",
+    "director": "Andy Muschietti",
+    "stars" : ["Bill Skarsgaard","Finn Wolfhard","Jeremy Ray Taylor","Jaeden Lieberher","Sophia Lillis"],
+    "age-rating": "R",
+    "length":"135",
+    "poster": ""
+  },
+    {
+    "name" : "Logan",
+    "genre" : ["Action","Sci-Fi", "Drama"],
+    "release" : "03/03/2017",
+    "distributor": "20th Century Fox",
+    "director": "James Mangold",
+    "stars" : ["Hugh Jackman","Patrick Stewart","Dafne Keen","Boyd Holbrook","Stephen Merchant"],
+    "age-rating": "R",
+    "length":"147",
+    "poster": ""
+  }
+
+]
