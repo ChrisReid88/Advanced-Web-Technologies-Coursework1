@@ -37,7 +37,7 @@
     "Dan Stevens",
     "Josh Gad"
   ],
-  "age-rating": "PG",
+  "agerating": "PG",
   "length": "129",
   "poster": "/static/imgs/batb.jpg",
   "urlname": "beautyandthebeast"
@@ -55,7 +55,7 @@
       "Connie Nielsen",
       ""
     ],
-    "age-rating": "PG-13",
+    "agerating": "PG-13",
     "length": "141",
     "poster": "/static/imgs/ww.jpg",
     "urlname": "wonderwoman"
@@ -73,7 +73,7 @@
       "Jaeden Lieberher",
       "Sophia Lillis"
     ],
-    "age-rating": "R",
+    "agerating": "R",
     "length": "135",
     "poster": "static/imgs/it.jpg",
     "urlname": "it"
@@ -91,7 +91,7 @@
       "Boyd Holbrook",
       "Stephen Merchant"
     ],
-    "age-rating": "R",
+    "agerating": "R",
     "length": "147",
     "poster": "/static/imgs/logan.jpg",
     "urlname": "logan"

@@ -5,21 +5,22 @@
 </head>
 <body>
 {% include 'menu.html' %}
+
     <div class="container">
         <div class="row">
             <div class="col-lg-4">
-                <h2 id="name">{{ response[0].name }}</h2>
-                <p>Director: {{ response[0].director }}</p>
-                <p>Stars: {% for value in response[0].stars %}{{ value }}, {% endfor %}</p>
-                <p>Genres: {% for value in response[0].genre %}{{ value }}, {% endfor %}</p>
-                <p>Released: {{ response[0].release  }}</p>
-                <p>Runtime:{{ response[0].length }} minutes</p>
-                <p>Distributor: {{ response[0].distributor }}</p>
-                <p>Age rating: {{ response[0].agerating }}</p>
+                <h2 id="name">{{ response[name].name }}</h2>
+                <h3>Director: {{ response[name].director }}</h3>
+                <h3>Stars: {% for value in response[name].stars %}{{ value }}, {% endfor %}</h3>
+                <h3>Genres: {% for value in response[name].genre %}{{ value }}, {% endfor %}</h3>
+                <h3>Released: {{ response[name].release  }}</h3>
+                <h3>Runtime:{{ response[name].length }} minutes</h3>
+                <h3>Distributor: {{ response[name].distributor }}</h3>
+                <h3>Age rating: {{ response[name].agerating }}</h3>
             </div>
             <div class="col-lg-1"></div>
             <div class="col-lg-6">
-                <img src="{{ response[0].poster }}" alt="{{ response[0].name }}" id="poster">
+                <img src="{{ response[name].poster }}" alt="{{ response[name].name }}" id="poster">
             </div>
         </div>
     </div>

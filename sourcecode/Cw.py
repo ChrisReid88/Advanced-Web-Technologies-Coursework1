@@ -16,9 +16,11 @@ def about():
 
 @app.route('/<name>')
 def movie(name=None):
-    with app.open_resource('static/data.json') as f:
+    with app.open_resource('static/data2.json') as f:
         if __name__ == '__main__':
             data = json.load(f)
+
+
         return render_template('movie.html', name=name, response=data)
 
 
