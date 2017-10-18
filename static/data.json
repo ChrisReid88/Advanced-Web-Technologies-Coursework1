@@ -8,10 +8,10 @@
     "stars" : [ "Harrison Ford","Ryan Gosling","Ana de Armas","Dave Bautista" ],
     "age-rating": "R",
     "length": "164",
-    "poster":""
+    "poster":"/static/bladerunner.jpg"
   },
   {
-    "name" : "Beauty in the Beast",
+    "name" : "Beauty and the Beast",
     "genre" : ["Musical","Fantasy","Romance"],
     "release" : "17/03/2017",
     "distributor": "Disney",
@@ -19,7 +19,7 @@
     "stars" : ["Emma Watson","Luke Evans","Kevin Kline","Dan Stevens","Josh Gad"],
     "age-rating": "PG",
     "length":"129",
-    "poster":""
+    "poster":"/static/batb.jpg"
   },
   {
     "name" : "Wonder Woman",
@@ -30,7 +30,7 @@
     "stars" : ["Gal Gadot","Chris Pine","Robin Wright","Connie Nielsen",""],
     "age-rating": "PG-13",
     "length":"141",
-    "poster": ""
+    "poster": "/static/ww.jpg"
   },
   {
     "name" : "It",
@@ -41,7 +41,7 @@
     "stars" : ["Bill Skarsgaard","Finn Wolfhard","Jeremy Ray Taylor","Jaeden Lieberher","Sophia Lillis"],
     "age-rating": "R",
     "length":"135",
-    "poster": ""
+    "poster": "static/it.jpg"
   },
     {
     "name" : "Logan",
@@ -52,7 +52,7 @@
     "stars" : ["Hugh Jackman","Patrick Stewart","Dafne Keen","Boyd Holbrook","Stephen Merchant"],
     "age-rating": "R",
     "length":"147",
-    "poster": ""
+    "poster": "/static/logan.jpg"
   }
 
 ]

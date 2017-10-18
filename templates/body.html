@@ -1,21 +1,25 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Test</title>
+    <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="static/css/style.css">
+    <title>Home</title>
+
 </head>
 <body>
-{% extends 'menu.html' %}
-{% block content %}
-    <ul>
-        {% for value in response %}
-            <li> {{ value['name'] }}</li>
-        {% endfor %}
-    </ul>
+    <div class="container">
+        <div class="row">
+                {% for value in response %}
+                    <div class="well col-lg-6 text-center">
+                        <h4> {{ value['name']}}</h4>
+                        <img src="{{ value['poster']}}" class="images" alt="{{ value['name'] }}">
+                    </div>
 
-{% endblock %}
+                {% endfor %}
+        </div>
+    </div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </body>
 </html>
