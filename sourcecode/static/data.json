@@ -6,9 +6,10 @@
     "distributor": "Warner Bros",
     "director": "Denis Villeneuve",
     "stars" : [ "Harrison Ford","Ryan Gosling","Ana de Armas","Dave Bautista" ],
-    "age-rating": "R",
+    "agerating": "R",
     "length": "164",
-    "poster":"/static/imgs/bladerunner.jpg"
+    "poster":"/static/imgs/bladerunner.jpg",
+    "urlname":"bladerunner2049"
   },
   {
     "name" : "Beauty and the Beast",
@@ -19,7 +20,8 @@
     "stars" : ["Emma Watson","Luke Evans","Kevin Kline","Dan Stevens","Josh Gad"],
     "age-rating": "PG",
     "length":"129",
-    "poster":"/static/imgs/batb.jpg"
+    "poster":"/static/imgs/batb.jpg",
+    "urlname":"beautyandthebeast"
   },
   {
     "name" : "Wonder Woman",
@@ -30,7 +32,8 @@
     "stars" : ["Gal Gadot","Chris Pine","Robin Wright","Connie Nielsen",""],
     "age-rating": "PG-13",
     "length":"141",
-    "poster": "/static/imgs/ww.jpg"
+    "poster": "/static/imgs/ww.jpg",
+    "urlname":"wonderwoman"
   },
   {
     "name" : "It",
@@ -41,7 +44,8 @@
     "stars" : ["Bill Skarsgaard","Finn Wolfhard","Jeremy Ray Taylor","Jaeden Lieberher","Sophia Lillis"],
     "age-rating": "R",
     "length":"135",
-    "poster": "static/imgs/it.jpg"
+    "poster": "static/imgs/it.jpg",
+    "urlname":"it"
   },
     {
     "name" : "Logan",
@@ -52,7 +56,8 @@
     "stars" : ["Hugh Jackman","Patrick Stewart","Dafne Keen","Boyd Holbrook","Stephen Merchant"],
     "age-rating": "R",
     "length":"147",
-    "poster": "/static/imgs/logan.jpg"
+    "poster": "/static/imgs/logan.jpg",
+      "urlname":"logan"
   }
 
 ]

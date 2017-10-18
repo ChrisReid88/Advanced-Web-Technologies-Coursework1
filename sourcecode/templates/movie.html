@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>{{ responsename }}</title>
+</head>
+<body>
+{% include 'menu.html' %}
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4">
+                <h2 id="name">{{ response[0].name }}</h2>
+                <p>Director: {{ response[0].director }}</p>
+                <p>Stars: {% for value in response[0].stars %}{{ value }}, {% endfor %}</p>
+                <p>Genres: {% for value in response[0].genre %}{{ value }}, {% endfor %}</p>
+                <p>Released: {{ response[0].release  }}</p>
+                <p>Runtime:{{ response[0].length }} minutes</p>
+                <p>Distributor: {{ response[0].distributor }}</p>
+                <p>Age rating: {{ response[0].agerating }}</p>
+            </div>
+            <div class="col-lg-1"></div>
+            <div class="col-lg-6">
+                <img src="{{ response[0].poster }}" alt="{{ response[0].name }}" id="poster">
+            </div>
+        </div>
+    </div>
+</body>
+</html>
