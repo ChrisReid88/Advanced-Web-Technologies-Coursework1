@@ -20,7 +20,6 @@ def movie(name=None):
         if __name__ == '__main__':
             data = json.load(f)
 
-
         return render_template('movie.html', name=name, response=data)
 
 

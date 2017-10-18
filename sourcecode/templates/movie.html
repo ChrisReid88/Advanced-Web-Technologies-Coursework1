@@ -1,7 +1,8 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <title>{{ responsename }}</title>
+    <link rel="stylesheet"  type="text/css" href="static/css/style.css">
+    <title>{{ response[name].name }}</title>
 </head>
 <body>
 {% include 'menu.html' %}
@@ -10,17 +11,18 @@
         <div class="row">
             <div class="col-lg-4">
                 <h2 id="name">{{ response[name].name }}</h2>
-                <h3>Director: {{ response[name].director }}</h3>
-                <h3>Stars: {% for value in response[name].stars %}{{ value }}, {% endfor %}</h3>
-                <h3>Genres: {% for value in response[name].genre %}{{ value }}, {% endfor %}</h3>
-                <h3>Released: {{ response[name].release  }}</h3>
-                <h3>Runtime:{{ response[name].length }} minutes</h3>
-                <h3>Distributor: {{ response[name].distributor }}</h3>
-                <h3>Age rating: {{ response[name].agerating }}</h3>
+                <h4>Director: {{ response[name].director }}</h4>
+                <h4>Stars: {% for value in response[name].stars %}{{ value }}, {% endfor %}</h4>
+                <h4>Genres: {% for value in response[name].genre %}{{ value }}, {% endfor %}</h4>
+                <h4>Released: {{ response[name].release  }}</h4>
+                <h4>Runtime:{{ response[name].length }} minutes</h4>
+                <h4>Distributor: {{ response[name].distributor }}</h4>
+                <h4>Age rating: {{ response[name].agerating }}</h4>
+                <h4>Synopsis: {{ response[name].synopsis }} </h4>
             </div>
             <div class="col-lg-1"></div>
             <div class="col-lg-6">
-                <img src="{{ response[name].poster }}" alt="{{ response[name].name }}" id="poster">
+                <img src="{{ response[name].poster }}" alt="{{ response[name].name }}" class="poster">
             </div>
         </div>
     </div>
