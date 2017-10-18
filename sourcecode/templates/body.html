@@ -1,13 +1,16 @@
 <!doctype html>
 <html lang="en">
 <head>
+
     <link href="{{ url_for('static', filename='css/bootstrap.min.css') }}" rel="stylesheet"/>
     <link rel="stylesheet" type="text/css" href="static/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Indie+Flower" rel="stylesheet">
     <title>Home</title>
 
 </head>
 <body>
     {% include 'menu.html' %}
+    <h1 id="header">Top rated movies of 2017</h1>
 
     <div class="container">
         <div class="row">
