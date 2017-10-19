@@ -2,6 +2,8 @@
 <html lang="en">
 <head>
     <link rel="stylesheet"  type="text/css" href="static/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Indie+Flower" rel="stylesheet">
+
     <title>{{ response[name].name }}</title>
 </head>
 <body>
@@ -10,7 +12,7 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-4">
-                <h2 id="name">{{ response[name].name }}</h2>
+                <h2 id="header">{{ response[name].name }}</h2>
                 <h4>Director: {{ response[name].director }}</h4>
                 <h4>Stars: {% for value in response[name].stars %}{{ value }}, {% endfor %}</h4>
                 <h4>Genres: {% for value in response[name].genre %}{{ value }}, {% endfor %}</h4>
