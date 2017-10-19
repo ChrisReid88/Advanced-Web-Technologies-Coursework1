@@ -3,12 +3,15 @@ from flask import Flask,json,request, render_template
 app = Flask(__name__)
 
 
+def load_data():
+    with app.open_resource('static/data2.json') as f:
+        data = json.load(f)
+    return data
+
+
 @app.route('/')
 def home():
-    with app.open_resource('static/data2.json') as f:
-        if __name__ == '__main__':
-            data = json.load(f)
-        return render_template('home.html', response=data)
+    return render_template('home.html', response=load_data())
 
 
 @app.route('/about')
@@ -18,33 +21,24 @@ def about():
 
 @app.route('/<name>')
 def movie(name=None):
-    with app.open_resource('static/data2.json') as f:
-        if __name__ == '__main__':
-            data = json.load(f)
-
-        return render_template('movie.html', name=name, response=data)
+        return render_template('movie.html', name=name, response=load_data())
 
 
 @app.route('/genre')
 def genre():
-    with app.open_resource('static/data2.json') as f:
-        if __name__ == '__main__':
-            data = json.load(f)
-        genres=[]
-        for movie in data.values():
-            for genre in movie['genre']:
-                if genre not in genres:
-                    genres.append(genre)
-                    genres.sort()
-        return render_template('genre.html', gen=genres, response=data)
+    load_data()
+    genres=[]
+    for movie in load_data().values():
+        for genre in movie['genre']:
+            if genre not in genres:
+                genres.append(genre)
+                genres.sort()
+    return render_template('genre.html', gen=genres, response=load_data())
 
 
 @app.route('/genre/<genre>')
-def specificgenre(genre=None):
-    with app.open_resource('static/data2.json') as f:
-        if __name__ == '__main__':
-            data = json.load(f)
-        return render_template('filtered.html', genre=genre, response=data)
+def specific_genre(genre=None):
+    return render_template('filtered.html', genre=genre, response=load_data())
 
 
 if __name__ ==  "__main__":
