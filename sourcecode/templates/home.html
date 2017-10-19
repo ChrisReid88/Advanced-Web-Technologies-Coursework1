@@ -14,7 +14,7 @@
 
     <div class="container">
         <div class="row">
-                {% for value in response %}
+                {% for value in response.values() %}
                     <a href="{{ value['urlname'] }}">
                         <div class="well col-lg-4 text-center homeWell">
                             <h3 id="movie"> {{ value['name']}}</h3>

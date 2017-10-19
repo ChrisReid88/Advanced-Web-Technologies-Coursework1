@@ -5,7 +5,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def home():
-    with app.open_resource('static/data.json') as f:
+    with app.open_resource('static/data2.json') as f:
         if __name__ == '__main__':
             data = json.load(f)
         return render_template('home.html', response=data)
