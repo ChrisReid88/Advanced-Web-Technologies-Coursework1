@@ -1,3 +1,7 @@
+h4,h2,h3,p{
+    color:white;
+}
+
 .images{
     max-width:200px;
     max-height:400px;
@@ -5,7 +9,8 @@
 
 body{
     height:100%;
-    /*background-color: #333333 !important;*/
+    background-color: #333333 !important;
+    color:white !important;
 }
 
 .homeWell {
@@ -26,4 +31,8 @@ navbar-inverse{
 .poster{
     float:right;
     max-width: 400px;
+}
+
+.well{
+    background-color: #333333 !important;
 }

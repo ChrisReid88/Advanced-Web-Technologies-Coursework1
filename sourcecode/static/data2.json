@@ -54,8 +54,7 @@
       "Gal Gadot",
       "Chris Pine",
       "Robin Wright",
-      "Connie Nielsen",
-      ""
+      "Connie Nielsen"
     ],
     "agerating": "PG-13",
     "length": "141",
@@ -78,7 +77,7 @@
     ],
     "agerating": "R",
     "length": "135",
-    "poster": "static/imgs/it.jpg",
+    "poster": "/static/imgs/it.jpg",
     "urlname": "it",
     "synopsis":"Seven young outcasts in Derry, Maine, are about to face their worst nightmare -- an ancient, shape-shifting evil that emerges from the sewer every 27 years to prey on the town's children. Banding together over the course of one horrifying summer, the friends must overcome their own personal fears to battle the murderous, bloodthirsty clown known as Pennywise."
 },
@@ -120,7 +119,7 @@
     ],
     "agerating": "R",
     "length": "144",
-    "poster": "static/imgs/getout.jpg",
+    "poster": "/static/imgs/getout.jpg",
     "urlname": "getout",
     "synopsis": "Now that Chris (Daniel Kaluuya) and his girlfriend, Rose (Allison Williams), have reached the meet-the-parents milestone of dating, she invites him for a weekend getaway upstate with Missy and Dean. At first, Chris reads the family's overly accommodating behavior as nervous attempts to deal with their daughter's interracial relationship, but as the weekend progresses, a series of increasingly disturbing discoveries lead him to a truth that he never could have imagined."
   }
