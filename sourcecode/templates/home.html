@@ -16,7 +16,7 @@
         <div class="row">
                 {% for value in response %}
                     <a href="{{ value['urlname'] }}">
-                        <div class="well col-lg-4 text-center">
+                        <div class="well col-lg-4 text-center homeWell">
                             <h3 id="movie"> {{ value['name']}}</h3>
                             <img src="{{ value['poster']}}" class="images" alt="{{ value['name'] }}">
                         </div>
