@@ -36,3 +36,15 @@ navbar-inverse{
 .well{
     background-color: #333333 !important;
 }
+
+/*input[type=text]{*/
+    /*display:block;*/
+/*}*/
+
+#submit{
+    color:black !important;
+}
+
+#prof{
+    max-height:300px;
+}

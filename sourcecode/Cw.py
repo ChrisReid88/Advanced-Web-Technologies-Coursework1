@@ -1,4 +1,4 @@
-from flask import Flask,json,request, render_template
+from flask import Flask,json, render_template
 
 app = Flask(__name__)
 
@@ -16,7 +16,7 @@ def home():
 
 @app.route('/about')
 def about():
-    return render_template('about.html')
+    return render_template('contact.html')
 
 
 @app.route('/<name>')
