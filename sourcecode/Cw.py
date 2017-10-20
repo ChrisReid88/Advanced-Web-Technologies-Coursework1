@@ -1,4 +1,4 @@
-from flask import Flask,json, render_template
+from flask import Flask,json, render_template, request
 
 app = Flask(__name__)
 
@@ -17,6 +17,21 @@ def home():
 @app.route('/about')
 def about():
     return render_template('contact.html')
+
+
+@app.route('/about', methods=['POST'])
+def feedback():
+    name = request.form['name']
+    email = request.form['email']
+    message = request.form['message']
+    fdbk = '{ "name":"' + name + '", "email":"' + email + '", "message":"' + message + '"}'
+    with open("static/feedback.json", "a") as myfile:
+        myfile.write(fdbk)
+    return render_template('feedback.html')
+
+@app.route('/about/feedback')
+def feedback_received():
+    return render_template('feedback.html')
 
 
 @app.route('/<name>')
