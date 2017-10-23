@@ -60,3 +60,7 @@ navbar-inverse{
 .feedback-labels{
     color:white !important;
 }
+
+#creator{
+    text-align: center;
+}
