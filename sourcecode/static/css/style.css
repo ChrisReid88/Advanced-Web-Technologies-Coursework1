@@ -43,12 +43,20 @@ navbar-inverse{
 
 #submit{
     color:black !important;
+    text-align: center;
 }
 
 #prof{
     max-height:300px;
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 #feedback{
     color: black;
+}
+
+.feedback-labels{
+    color:white !important;
 }
