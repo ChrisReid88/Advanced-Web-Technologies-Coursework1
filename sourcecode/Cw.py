@@ -67,5 +67,11 @@ def specific_genre(genre=None):
     return render_template('filtered.html', genre=genre, response=load_data())
 
 
+# Redirect user if url they entered is not found
+@app.errorhandler(404)
+def page_not_found(error):
+    return render_template('not_found.html')
+
+
 if __name__ ==  "__main__":
     app.run(debug =True)
