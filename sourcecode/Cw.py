@@ -73,5 +73,9 @@ def page_not_found(error):
     return render_template('not_found.html')
 
 
+@app.errorhandler(Exception)
+def exception_error(error):
+    return render_template('not_found.html')
+
 if __name__ ==  "__main__":
     app.run(debug =True)
