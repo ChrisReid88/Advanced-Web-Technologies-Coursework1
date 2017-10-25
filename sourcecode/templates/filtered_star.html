@@ -9,7 +9,8 @@
 <body>
 {% include 'menu.html' %}
     <h1 id="header">{{ genre }}</h1>
-    <div class="container-fluid">
+    <div class="container">
+        <!-- Filters the movies by a certain star and displays the title and poster -->>
         {% for value in response.values() %}
                 {% if star in value['stars'] %}
                       <a href="../{{ value['urlname'] }}">

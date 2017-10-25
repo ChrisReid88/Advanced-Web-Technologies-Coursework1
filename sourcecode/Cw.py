@@ -67,6 +67,9 @@ def specific_genre(genre=None):
     return render_template('filtered.html', genre=genre, response=load_data())
 
 
+# Stars page that creates a list of stars which are taken from the stars lists for each movie in the json.
+# Ensures duplicates aren't
+# added and then sorts them in ascending order.
 @app.route('/stars')
 def stars():
     load_data()
@@ -79,6 +82,8 @@ def stars():
     return render_template('stars.html', gen=movie_stars, response=load_data())
 
 
+# Displays the set of Stars. Clicking a star filters displayed movies by that specific genre
+# Movies that are clicked navigate back to the '/<star>' page.
 @app.route('/stars/<star>')
 def specific_star(star=None):
     return render_template('filtered_star.html', star=star, response=load_data())
@@ -90,6 +95,7 @@ def page_not_found(error):
     return render_template('not_found.html')
 
 
+#Redirect user if the star they have entered does not exist
 @app.errorhandler(Exception)
 def exception_error(error):
     return render_template('not_found.html')

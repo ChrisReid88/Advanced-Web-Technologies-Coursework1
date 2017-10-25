@@ -14,6 +14,7 @@
 
     <div class="container">
         <div class="row">
+            <!-- For each movie it displays the title and poster of the move and sets each url name. -->
                 {% for value in response.values() %}
                     <a href="{{ value['urlname'] }}">
                         <div class="well col-lg-4 text-center homeWell">
