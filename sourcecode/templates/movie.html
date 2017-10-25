@@ -18,7 +18,7 @@
                 <h4>Stars: {% for value in response[name].stars %} <a href="{{ wiki + value|replace(" ","_")}}" >{{ value }}{{ "," if not loop.last }} </a>{% endfor %}</h4>
                 <h4>Genres: {% for value in response[name].genre %}{{ value }}{{ "," if not loop.last }} {% endfor %}</h4>
                 <h4>Released: {{ response[name].release  }}</h4>
-                <h4>Runtime:{{ response[name].length }} minutes</h4>
+                <h4>Runtime: {{ response[name].length }} minutes</h4>
                 <h4>Distributor: {{ response[name].distributor }}</h4>
                 <h4>Age rating: {{ response[name].agerating }}</h4>
                 <h4>Synopsis: {{ response[name].synopsis }} </h4>

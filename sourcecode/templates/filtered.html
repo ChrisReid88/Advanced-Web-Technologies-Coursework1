@@ -9,7 +9,7 @@
 <body>
 {% include 'menu.html' %}
     <h1 id="header">{{ genre }}</h1>
-    <div class="container-fluid">
+    <div class="container">
         {% for value in response.values() %}
                 {% if  genre  in value['genre'] %}
                       <a href="../{{ value['urlname'] }}">
