@@ -67,6 +67,23 @@ def specific_genre(genre=None):
     return render_template('filtered.html', genre=genre, response=load_data())
 
 
+@app.route('/stars')
+def stars():
+    load_data()
+    movie_stars=[]
+    for movie in load_data().values():
+        for star in movie['stars']:
+            if star not in movie_stars:
+                movie_stars.append(star)
+                movie_stars.sort()
+    return render_template('stars.html', gen=movie_stars, response=load_data())
+
+
+@app.route('/stars/<star>')
+def specific_star(star=None):
+    return render_template('filtered_star.html', star=star, response=load_data())
+
+
 # Redirect user if url they entered is not found
 @app.errorhandler(404)
 def page_not_found(error):

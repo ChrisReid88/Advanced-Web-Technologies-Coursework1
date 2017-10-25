@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Indie+Flower" rel="stylesheet">
+
+    <title>Stars</title>
+</head>
+<p>
+    {% include 'menu.html' %}
+    <h1 id="header">Filter by stars</h1>
+    <div class="container">
+        <div class="row">
+            {% for items in gen %}
+                <a href="/stars/{{ items }}">
+                    <div class="col-lg-4">
+                        <h3 class="well text-center genres" id="{{ items }}"> {{ items }} </h3>
+                    </div>
+                </a>
+            {% endfor %}
+
+        </div>
+    </div>
+</body>
+</html>
