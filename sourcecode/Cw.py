@@ -23,7 +23,7 @@ def about():
 
 
 # Feedback page with post method to receive and store text entered by user
-@app.route('/about', methods=['POST'])
+@app.route('/contact', methods=['POST'])
 def feedback():
     name = request.form['name']
     email = request.form['email']
